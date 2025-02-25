@@ -1,18 +1,33 @@
-# CozyCoder
+# Cozy Coder Server
 
-To start your Phoenix server:
+Sync and collaboration service for Cozy Coder.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Prerequisites
+
+- Elixir
+- Docker Compose
+
+### Installation
+
+**Recommended:** Use [`mise`](https://mise.jdx.dev) to install Elixir:
+
+```sh
+mise install
+  ```
+
+## Usage
+
+1. Setup dependencies:
+
+   ```sh
+   docker compose up -d
+   mix setup
+   ```
+
+2. Start the application:
+
+   ```sh
+   mix phx.server
+   ```
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
